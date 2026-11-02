@@ -1,6 +1,6 @@
 # Cofa Hackathon Kit
 
-180분 실무 해커톤을 위한 작은 공개 준비 저장소다. 기능 단위 승인, 필요한 요구사항 질문, 근거 있는 완료 보고를 돕는다. 시험 문제나 결과물을 보관하는 저장소가 아니다. 사용한 준비 저장소는 **2차 결과 통지까지 공개 상태를 유지**한다. 실제 운영 공지와 제공 환경의 지침이 우선이다.
+실무 해커톤을 위한 작은 공개 준비 저장소다. 기능 단위 승인, 필요한 요구사항 질문, 근거 있는 완료 보고와 코드 이해를 돕는다. 180분은 기존 안내의 참고값이며 실제 제한 시간은 최신 응시 안내와 타이머를 따른다. 시험 문제나 결과물을 보관하는 저장소가 아니다. 사용한 준비 저장소는 **2차 결과 통지까지 공개 상태를 유지**한다. 실제 운영 공지와 제공 환경의 지침이 우선이다.
 
 ## 구성
 
@@ -8,6 +8,8 @@
 | --- | --- |
 | [AGENTS.md](AGENTS.md) | 선택적으로 적용할 작업·승인·검증 원칙 |
 | [docs/COFA-WORKFLOW.md](docs/COFA-WORKFLOW.md) | 참가자의 환경 확인·미리보기·제출 체크리스트 |
+| [START-PROMPT.txt](START-PROMPT.txt) | 참가자가 직접 복사해 보내는 시작 프롬프트 |
+| [docs/PRACTICE.md](docs/PRACTICE.md) | 시험 전 가상 프로젝트로 진행하는 사람용 코드 이해 연습 |
 | [deep-interview-exam/SKILL.md](skills/deep-interview-exam/SKILL.md) | 불명확한 요구사항만 짧게 확인하는 별도 변형 |
 | [deep-interview-exam/LICENSE](skills/deep-interview-exam/LICENSE) | 원본 MIT 라이선스 |
 | [verification-before-completion/SKILL.md](skills/verification-before-completion/SKILL.md) | Superpowers의 완료 전 검증 Skill 원문 |
@@ -30,16 +32,10 @@
 
 ## 시작 프롬프트
 
-아래 `<kit 경로>`를 실제 clone한 폴더의 절대 경로로 바꾼다.
+시작 프롬프트의 본문은 [START-PROMPT.txt](START-PROMPT.txt) 하나로 관리한다. 참가자가 직접 열어 복사하고, `/home/user/cofa-hackathon-kit`을 실제 kit 경로로 바꿔 허용된 Codex 세션에 보낸다. 자동 로드용 지침이 아니다.
 
-```text
-과제 README와 기존 작업·운영·안전 지침을 먼저 읽어줘.
-상위 규칙 안에서 <kit 경로>/AGENTS.md와 <kit 경로>/docs/COFA-WORKFLOW.md를 읽어줘.
-요구사항이 불명확할 때만 <kit 경로>/skills/deep-interview-exam/SKILL.md를,
-완료 검증에는 <kit 경로>/skills/verification-before-completion/SKILL.md를 읽어줘.
-현재 경로·기존 변경·필수 기능·제출 문서의 이름·제출 위치를 확인하고 uploads를 추측하지 마.
-요구사항을 출처·구현 위치·검증 입력·독립 기대 결과·근거와 연결해줘.
-입력→처리→출력이 이어지는 가장 작은 첫 기능의 계획을 제안하고, 승인 전에는 구현하지 마.
-승인 후 그 범위에서 구현·테스트·수정과 필수 문서 갱신을 진행하고 저장해줘.
-실제 diff·새 검증 근거·남은 한계를 보여주고, 결과 승인 후 다음 기능으로 진행해줘.
-```
+흐름은 기능 계획 승인 → 해당 범위의 구현·관련 엣지케이스 검증·필수 문서 갱신 → 주요 기능 설명·짧은 이해 확인과 diff·결과 보고 → 결과 승인 후 다음 기능이다. 이해 질문 때문에 별도 승인 단계를 추가하거나 작은 수정마다 퀴즈를 반복하지 않는다.
+
+## 시험 전 연습
+
+참가자는 [docs/PRACTICE.md](docs/PRACTICE.md)를 직접 열어 가상 프로젝트로 코드 읽기·설명·피드백·재설명을 연습할 수 있다. 실제 시험 자료나 모범답안을 모으는 문서가 아니며, 시험 중 자동으로 읽도록 연결하지 않는다.
